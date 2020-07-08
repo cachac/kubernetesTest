@@ -5,14 +5,12 @@ metadata:
   labels:
     name: result-service
     app: demo-voting-app
-
 spec:
   type: LoadBalancer
   ports:
-    - port: 80 # service port
-      targetPort: 80
-
-  selector: # labels of pod
-    name: result-app-pod
-    app: demo-voting-app
+  - port: 80
+    targetPort: 80
+  selector:
+     name: result-app-pod
+     app: demo-voting-app
 

@@ -5,10 +5,16 @@ metadata:
   labels:
     name: redis-pod
     app: demo-voting-app
-
 spec:
   containers:
+<<<<<<< HEAD:demo/pod/redis-pod.yml
     - name:  redis
       image: redis
       ports:
         - containerPort: 6379
+=======
+  - name: redis
+    image: redis:latest
+    ports:
+     - containerPort: 6379
+>>>>>>> 593c02a162df4bb0040d0ac3a574e362a87e21ad:demo02/pod/redis-pod.yml
